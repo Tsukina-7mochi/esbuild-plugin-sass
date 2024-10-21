@@ -1,5 +1,5 @@
 import * as esbuild from 'esbuild';
-import sassPlugin from '../mod.ts';
+import sassPlugin from '../../mod.ts';
 
 await Promise.all([
   esbuild.build({

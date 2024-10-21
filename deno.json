@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "exports": "./mod.ts",
   "tasks": {
-    "build:example": "cd example && deno run --allow-read --allow-write --allow-run --allow-env build.ts",
-    "clean:example": "rm example/*.css"
+    "build:example-deno": "cd example/deno && deno run --allow-read --allow-write --allow-run --allow-env build.ts",
+    "clean:example": "rm example/**/*.css"
   },
   "license": "MIT",
   "imports": {
