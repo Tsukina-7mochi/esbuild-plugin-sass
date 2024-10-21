@@ -4,7 +4,9 @@ import type * as esbuild from 'esbuild';
 import * as sass from 'sass';
 
 interface SassPluginOptions {
+  /** The loader of compiled CSS source. Default is "css". */
   loader?: esbuild.Loader;
+  /** Sass compiler options. Advanced option to override default plugin configuraiton. */
   sassOptions?: sass.Options<'async'>;
 }
 
