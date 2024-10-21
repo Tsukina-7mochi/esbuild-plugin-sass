@@ -1,0 +1,18 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "devDependencies": {
+    "@tsukina-7mochi/esbuild-plugin-sass": "npm:@jsr/tsukina-7mochi__esbuild-plugin-sass@^0.1.0",
+    "jsr": "^0.13.2"
+  }
+}
