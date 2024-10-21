@@ -3,13 +3,15 @@ import * as path from '@std/path';
 import type * as esbuild from 'esbuild';
 import * as sass from 'sass';
 
+/** Options for esbuild-plugin-sass. */
 interface SassPluginOptions {
   /** The loader of compiled CSS source. Default is "css". */
   loader?: esbuild.Loader;
-  /** Sass compiler options. Advanced option to override default plugin configuraiton. */
+  /** Sass compiler options. Advanced option to override default plugin configraiton. */
   sassOptions?: sass.Options<'async'>;
 }
 
+/** A plugin for esbuild to compile Sass/SCSS files. */
 const sassPlugin = (options: SassPluginOptions = {}): esbuild.Plugin => {
   return {
     name: 'esbuild-plugin-sass',
