@@ -4,7 +4,7 @@ import type * as esbuild from 'esbuild';
 import * as sass from 'sass';
 
 /** Options for esbuild-plugin-sass. */
-interface SassPluginOptions {
+export interface SassPluginOptions {
   /** The loader of compiled CSS source. Default is "css". */
   loader?: esbuild.Loader;
   /** Sass compiler options. Advanced option to override default plugin configraiton. */
@@ -12,7 +12,7 @@ interface SassPluginOptions {
 }
 
 /** A plugin for esbuild to compile Sass/SCSS files. */
-const sassPlugin = (options: SassPluginOptions = {}): esbuild.Plugin => {
+export const sassPlugin = (options: SassPluginOptions = {}): esbuild.Plugin => {
   return {
     name: 'esbuild-plugin-sass',
     setup: (build) => {
