@@ -7,13 +7,13 @@ A plugin of esbuild to call [Sass](https://sass-lang.com/) compiler when loading
 - Compile Sass/SCSS
 - Watching files
 - Override loaders
-- (WIP) Support source maps
+- Support source maps
 
 ## Usage
 
 ```typescript
 import * as esbuild from 'npm:esbuild@^0.24.0';
-import sassPlugin from "jsr:@tsukina-7mochi/esbuild-plugin-sass@^0.1.0";
+import sassPlugin from "jsr:@tsukina-7mochi/esbuild-plugin-sass@^0.1.2";
 
 await esbuild.build({
   entryPoints: ['./style.scss'],
