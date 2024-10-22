@@ -3,8 +3,10 @@
   "version": "0.1.1",
   "exports": "./mod.ts",
   "tasks": {
-    "build:example-deno": "cd example/deno && deno run --allow-read --allow-write --allow-run --allow-env build.ts",
-    "clean:example": "rm example/**/*.css"
+    "example:clean": "rm -rf example/dist",
+    "example:deno": "cd example && deno run --config ../deno.json --allow-read --allow-write --allow-run --allow-env build.mjs",
+    "example:node": "cd example && npm run build",
+    "example:serve": "cd example && deno run --allow-read --allow-net server.ts"
   },
   "license": "MIT",
   "imports": {
