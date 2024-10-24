@@ -13,7 +13,7 @@ A plugin of esbuild to call [Sass](https://sass-lang.com/) compiler when loading
 
 ```typescript
 import * as esbuild from 'npm:esbuild@^0.24.0';
-import sassPlugin from "jsr:@tsukina-7mochi/esbuild-plugin-sass@^0.1.2";
+import { sassPlugin } from "jsr:@tsukina-7mochi/esbuild-plugin-sass@^0.1.2";
 
 await esbuild.build({
   entryPoints: ['./style.scss'],

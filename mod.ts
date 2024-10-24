@@ -70,5 +70,3 @@ export const sassPlugin = (options: SassPluginOptions = {}): esbuild.Plugin => {
     },
   };
 };
-
-export default sassPlugin;
