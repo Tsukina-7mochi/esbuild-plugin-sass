@@ -1,7 +1,7 @@
 import esbuild from "esbuild";
-import sassPlugin from "@tsukina-7mochi/esbuild-plugin-sass";
+import { sassPlugin } from "@tsukina-7mochi/esbuild-plugin-sass";
 
-// import sassPlugin from "../mod.ts";
+// import { sassPlugin } from "../mod.ts";
 
 (async () => {
   await Promise.all([
