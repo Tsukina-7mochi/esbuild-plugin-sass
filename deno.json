@@ -1,6 +1,6 @@
 {
   "name": "@tsukina-7mochi/esbuild-plugin-sass",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "exports": "./mod.ts",
   "tasks": {
     "example:clean": "rm -rf example/dist",
