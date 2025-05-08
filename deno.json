@@ -10,9 +10,9 @@
   },
   "license": "MIT",
   "imports": {
-    "@std/path": "jsr:@std/path@^1.0.8",
-    "esbuild": "npm:esbuild@^0.24.0",
-    "sass": "npm:sass@^1.80.6"
+    "@std/path": "jsr:@std/path@^1.0.9",
+    "esbuild": "npm:esbuild@^0.25.4",
+    "sass": "npm:sass@^1.87.0"
   },
   "fmt": {
     "indentWidth": 2,
