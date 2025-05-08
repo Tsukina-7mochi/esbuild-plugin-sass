@@ -15,4 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - id: manifest-version
+        run: |
+          VERSION="$(cat deno.json | jq -r '.version')"
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+
+      - name: Fail if check version mismatch
+        if: github.ref_name != steps.manifest-version.outputs.version
+        run: |
+          echo -e "Version mismatch.\nversion: ${{ steps.manifest-version.outputs.version }}\ntag: ${{ github.ref_name }}"
+          exit 1
+
       - run: npx jsr publish
